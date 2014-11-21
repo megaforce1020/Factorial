@@ -29,9 +29,14 @@ public class ComputeFactorial {
                 if (algo == 1){
                     startTime = System.nanoTime();
                     for (int i = 1; i <=index; i++){
+                        answer = ifa.recursion(i);
+                        System.out.println(answer + " , ");
+                    }
+                    elapsedTime = System.nanoTime() - startTime;
+                    System.out.println("Running Time = " + elapsedTime);
                 }
             }
-        }
+        } while (task!=3);
     }
     
 }
